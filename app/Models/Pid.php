@@ -1,21 +1,21 @@
 <?php
 
 namespace App\Models;
-
 use Emadadly\LaravelUuid\Uuids;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Participant extends Model
-{   
-    use Uuids;
-    use HasFactory;
-
+/**
+ * Personal Information Document(s)
+ */
+class Pid extends Model
+{
+    use HasFactory, Uuids;
     /**
      * define the $table for the model
      * @var string
      */
-    protected $table = 'participants';
+    protected $table = 'pids';
 
     /**
      * Set $primaryKey column
@@ -23,7 +23,7 @@ class Participant extends Model
      */
     protected $primaryKey='id';
 
-     /**
+    /**
      * set $keyType to String since UUID is a string
      * @var string
      */
@@ -40,31 +40,12 @@ class Participant extends Model
      * @var array
      */
     protected $fillable =[
-        'full_name',
-        'age',
-        'email_address',
-        'phone_number',
-        'city',
-        'country'
+        'participant_id',
+        'path',
+        'name'
     ];
 
-    /**
-     * define $casts values
-     * @var array
-     */
-    protected $casts = [
-        'id'=>'string',
-    ];
-
-    public function portfolioImages(){
-        return $this->hasMany(Portfolio::class);
-    }
-
-    public function logos(){
-        return $this->hasMany(Logo::class);
-    }
-
-    public function pid(){
-        return $this->hasOne(Pid::class);
+    public function participant(){
+        return $this->belongsTo(Participant::class);
     }
 }
