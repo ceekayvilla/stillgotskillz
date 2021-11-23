@@ -12,9 +12,9 @@
 </head>
 <body class="bg">
     @include('frontend.partials.mobilemenu')
-    @include('frontend.partials.mainmenu')
+    @include('frontend.partials.main-menu')
     @yield('content')
-    @include('frontend.partials.footer')
+    @include('frontend.partials.footermenu')
     @include('frontend.partials.js')
 </body>
 </html>

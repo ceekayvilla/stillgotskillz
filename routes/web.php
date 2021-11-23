@@ -14,5 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('frontend.pages.home');
+})->name('home');
+Route::get('/about', function () {
+    return view('frontend.pages.home');
+})->name('about');
+Route::get('/submission-process', function () {
+    return view('frontend.pages.process');
+})->name('submission-process');
+Route::get('/terms-conditions', function () {
+    return view('frontend.pages.terms-conditions');
+})->name('terms-conditions');
+Route::get('/faqs', function () {
+    return view('frontend.pages.faqs');
+})->name('faqs');
+
