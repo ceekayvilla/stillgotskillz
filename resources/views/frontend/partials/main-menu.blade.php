@@ -8,11 +8,11 @@
               <li class=""><a href="https://www.eabl.com/en" class="active-trail">Home</a></li>
                  <li class="primary dropdown-submenu"><a href="https://www.eabl.com/en/our-brands" class="active-trail" id="dLabel">Still Got Skillz?<span class="caret"></span></a>
               <ul class="dropdown-menu">
-              <li class=""><a href="about-contest.html" class="active-trail">About Contest</a></li>
-              <li class=""><a href="submission-process.html" class="active-trail">Submission Process</a></li>
+              <li class=""><a href="{{route('about')}}" class="active-trail">About Contest</a></li>
+              <li class=""><a href="{{ route('submission-process') }}" class="active-trail">Submission Process</a></li>
         
-              <li class=""><a href="term-conditions.html" class="active-trail">Term & Conditions</a></li>
-              <li class=""><a href="faqs.html" class="active-trail">FAQS</a></li>
+              <li class=""><a href="{{ route('terms-conditions') }}" class="active-trail">Term & Conditions</a></li>
+              <li class=""><a href="{{ route('faqs') }}" class="active-trail">FAQS</a></li>
               </ul>
             </li>
               <li class=""><a href="https://www.eabl.com/en/buy-online" class="active-trail">Buy Now</a></li>

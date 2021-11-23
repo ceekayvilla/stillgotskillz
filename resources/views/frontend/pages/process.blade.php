@@ -8,7 +8,7 @@
        <div id="logo" class="hidden-xs hidden-md hidden-sm"><img src="https://www.eabl.com/sites/all/themes/eabl/images/logo.png"></div>
       <!---<div class="bannertitleinner os-animation"data-os-animation="fadeInDown" data-os-animation-delay="0"><h1>Our Heritage</div>--->
       <div id="banner">
-        <img src="{{ url('public/frontend/images/gotskillz-banners/still-got-skillz-banner-06.jpg ') }}"/>
+        <img src="{{ asset('frontend/images/gotskillz-banners/still-got-skillz-banner-06.jpg') }}"/>
     </div>
     </section>
     <article class="article">
@@ -31,7 +31,7 @@
                       <!---col-one steps-->
                         <div class="col-md-3">
                             <div class="bg-steps">
-                                <figure class="step-icon"><img src="{{ url('public/frontend/images/step-one-icon.png') }}"></figure>
+                                <figure class="step-icon"><img src="{{ asset('frontend/images/step-one-icon.png') }}"></figure>
                                   <h2>Step 1:</h2>
                                    <p>Create your interpretation of the KBL Logo</p>
                                </div>
@@ -39,7 +39,7 @@
                         <!---col-two steps-->
                         <div class="col-md-3">
                             <div class="bg-steps">
-                                <figure class="step-icon"><img src="{{ url('public/frontend/images/step-two-icon.png') }}"></figure>
+                                <figure class="step-icon"><img src="{{ asset('frontend/images/step-two-icon.png') }}"></figure>
                                   <h2>Step 2:</h2>
                                    <p>Log on to eabl.com/stillgotskillz and click on the “Submit entry” button.</p>
                                </div>
@@ -47,7 +47,7 @@
                         <!---col-three steps-->
                         <div class="col-md-3">
                             <div class="bg-steps">
-                                <figure class="step-icon"><img src="{{ url ('public/frontend/images/step-three-icon.png') }}"></figure>
+                                <figure class="step-icon"><img src="{{ asset ('frontend/images/step-three-icon.png') }}"></figure>
                                   <h2>Step 3:</h2>
                                    <p>Submit your entry + a portfolio of your work on the submission form by ………………………………</p>
                                </div>
@@ -55,7 +55,7 @@
                          <!---col-four steps-->
                         <div class="col-md-3">
                             <div class="bg-steps">
-                                <figure class="step-icon"><img src="{{ url ('public/frontend/images/step-four-icon.png') }}"></figure>
+                                <figure class="step-icon"><img src="{{ asset ('frontend/images/step-four-icon.png') }}"></figure>
                                   <h2>Step 4:</h2>
                                    <p>You will receive a confirmation of your entry via email. </p>
                                </div>

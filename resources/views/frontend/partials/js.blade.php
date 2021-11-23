@@ -9,3 +9,13 @@
     });
 </script>
 {!!Html::script('frontend/js/script.js',array(),env('RESOURCE_SECURE'))!!}
+
+<script type="text/javascript">
+      jQuery.fn.on("load", function (callback) {$(window).trigger("load", callback); });
+      jQuery.fn.on("bind", function (callback) {$(window).trigger("load", callback); });
+      jQuery.fn.on("unbind", function (callback) {$(window).trigger("off", callback); });
+      jQuery.fn.load = function (callback) {$(window).trigger("load", callback); };
+      jQuery.fn.bind = function (callback) {$(window).trigger("on", callback); };
+      jQuery.fn.unbind = function (callback) {$(window).trigger("off", callback); };
+      </script>
+<script type='text/javascript' src='//footer.diageohorizon.com/dfs/master.js'></script>

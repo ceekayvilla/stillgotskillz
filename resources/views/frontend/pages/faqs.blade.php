@@ -8,7 +8,7 @@
        <div id="logo" class="hidden-xs hidden-md hidden-sm"><img src="https://www.eabl.com/sites/all/themes/eabl/images/logo.png"></div>
       <!---<div class="bannertitleinner os-animation"data-os-animation="fadeInDown" data-os-animation-delay="0"><h1>Our Heritage</div>--->
       <div id="banner">
-        <img src="{{ url('public/frontend/images/gotskillz-banners/still-got-skillz-banner-04.jpg ') }}"/>
+        <img src="{{ asset('frontend/images/gotskillz-banners/still-got-skillz-banner-04.jpg ') }}"/>
     </div>
     </section>
     <article class="article">
@@ -85,7 +85,7 @@
                   <div class="panel" style="">
                     <p>
                     We are in the age of collaboration and this is already evident in the manner we are going about crafting our new logo. Corporate organizations depend on artists to tell their stories and to reach their customers and this is what we are doing with this project and intend to continue doing. </p>
-                    <p><i>(For more info, please refer to this competition’s <a href="sterm-conditions.html">Terms & Conditions</a> in on this site)</i></p>
+                    <p><i>(For more info, please refer to this competition’s <a href="{{route('terms-conditions')}}">Terms & Conditions</a> in on this site)</i></p>
                  </div>
 
 
