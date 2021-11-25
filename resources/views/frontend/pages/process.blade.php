@@ -25,7 +25,7 @@
                   <div class="spanwrapper">
                      <span class="bgleft"></span><h3>Submission Process</h3><span class="bgright"></span>
                   </div>
-                  <p class="pfirst">If you are an artist from Kenya between 21 – 25yrs old, follow the easy steps below to submit your entry by …………………………</p>
+                  <p class="pfirst">If you are an artist from Kenya between 21 – 25yrs old, follow the easy steps below to submit your entry by 10th December 2021</p>
                   <p>
                     <div class="row">
                       <!---col-one steps-->
@@ -33,7 +33,7 @@
                             <div class="bg-steps">
                                 <figure class="step-icon"><img src="{{ asset('frontend/images/step-one-icon.png') }}"></figure>
                                   <h2>Step 1:</h2>
-                                   <p>Create your interpretation of the KBL Logo</p>
+                                   <p>Step 1: Create your interpretation of the KBL Logo</p>
                                </div>
                         </div>
                         <!---col-two steps-->
@@ -41,7 +41,7 @@
                             <div class="bg-steps">
                                 <figure class="step-icon"><img src="{{ asset('frontend/images/step-two-icon.png') }}"></figure>
                                   <h2>Step 2:</h2>
-                                   <p>Log on to eabl.com/stillgotskillz and click on the “Submit entry” button.</p>
+                                   <p>Log on to <a href="https://www.eabl.com/stillgotskillz">eabl.com/stillgotskillz</a> and click on the “Submit entry” button.</p>
                                </div>
                         </div>
                         <!---col-three steps-->
@@ -49,7 +49,7 @@
                             <div class="bg-steps">
                                 <figure class="step-icon"><img src="{{ asset ('frontend/images/step-three-icon.png') }}"></figure>
                                   <h2>Step 3:</h2>
-                                   <p>Submit your entry + a portfolio of your work on the submission form by ………………………………</p>
+                                   <p> Submit your entry + a portfolio of your work on the submission form by 10th December 2021</p>
                                </div>
                         </div>
                          <!---col-four steps-->
@@ -57,7 +57,7 @@
                             <div class="bg-steps">
                                 <figure class="step-icon"><img src="{{ asset ('frontend/images/step-four-icon.png') }}"></figure>
                                   <h2>Step 4:</h2>
-                                   <p>You will receive a confirmation of your entry via email. </p>
+                                   <p>You will receive a confirmation of your entry via email.</p>
                                </div>
                         </div>
                     </div>
