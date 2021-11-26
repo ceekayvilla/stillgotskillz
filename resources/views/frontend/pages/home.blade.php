@@ -49,7 +49,7 @@
                     <figure class="prizes">
                       <div class="pri-col-one">
                         <div class="prizes-three">3RD PLACE:</div>
-                          <h6>KES 300,000/- Cash Prize</h6>
+                          <h6>KES 250,000/- Cash Prize</h6>
                       </div>
                     </figure>
                 </div>
