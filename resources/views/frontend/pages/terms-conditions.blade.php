@@ -8,7 +8,7 @@
        <div id="logo" class="hidden-xs hidden-md hidden-sm"><img src="https://www.eabl.com/sites/all/themes/eabl/images/logo.png"></div>
       <!---<div class="bannertitleinner os-animation"data-os-animation="fadeInDown" data-os-animation-delay="0"><h1>Our Heritage</div>--->
       <div id="banner">
-        <img src="{{ asset('frontend/images/gotskillz-banners/still-got-skillz-banner-03.jpg') }}"/>
+        <img src="{{ asset('public/frontend/images/gotskillz-banners/still-got-skillz-banner-03.jpg') }}"/>
     </div>
     </section>
     <article class="article">
