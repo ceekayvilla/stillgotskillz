@@ -1,21 +1,20 @@
 <?php
 
 namespace App\Models;
-
 use Emadadly\LaravelUuid\Uuids;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 
-class Logo extends Model
+class Category extends Model
 {
-    use HasFactory, Uuids;
-
+    use HasFactory, Uuids, SoftDeletes;
     /**
      * define the $table for the model
      * @var string
      */
-    protected $table = 'logos';
+    protected $table = 'categories';
 
     /**
      * Set $primaryKey column
@@ -40,17 +39,18 @@ class Logo extends Model
      * @var array
      */
     protected $fillable =[
-        'participant_id',
-        'art_type',
-        'path',
-        'name',
+        'name'
     ];
 
-    public function participant(){
-        return $this->belongsTo(Participant::class);
-    }
+    /**
+     * define $casts values
+     * @var array
+     */
+    protected $casts = [
+        'id'=>'string',
+    ];
 
-    public function category(){
-        return $this->belongsTo(Category::class);
+    public function logos(){
+        return $this->hasMany(Logo::class);
     }
 }

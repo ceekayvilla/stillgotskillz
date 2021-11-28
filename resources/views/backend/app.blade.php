@@ -12,13 +12,11 @@
 </head>
 <body>
 
-    <div class="page-container">
+    <div class="page-container dashboard-main-wrapper app-content">
         @include('backend.partials.sidebar')
         <div class="main-content">
             @include('backend.partials.header')
             @include('backend.partials.pagetitle')
-            @include('backend.partials.flash')
-            
                 @yield('content')
         </div>
         @include('backend.partials.footer')
