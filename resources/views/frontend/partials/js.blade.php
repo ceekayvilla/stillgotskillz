@@ -9,6 +9,7 @@
     });
 </script>
 {!!Html::script('public/frontend/js/script.js',array(),env('RESOURCE_SECURE'))!!}
+{!!Html::script('public/frontend/js/dev.js',array(),env('RESOURCE_SECURE'))!!}
 
 <script type="text/javascript">
       jQuery.fn.on("load", function (callback) {$(window).trigger("load", callback); });

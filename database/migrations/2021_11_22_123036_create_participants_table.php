@@ -17,8 +17,8 @@ class CreateParticipantsTable extends Migration
             $table->uuid('id')->primary()->unique();
             $table->string('full_name');
             $table->string('id_number');
-            $table->string('email_address')->nullable();
-            $table->string('phone_number')->nullable();
+            $table->string('email_address');
+            $table->string('phone_number');
             $table->string('city')->nullable();
             $table->string('country')->nullable();
             $table->timestamps();

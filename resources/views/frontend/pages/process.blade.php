@@ -62,7 +62,7 @@
                         </div>
                     </div>
                   </p>
-                  <div class="steps"><a style="width:auto" href="#" class="btn btn-lg btn-primary" role="button"><span style="color: #fff">Application form coming soon</span></a></div>
+                  <div class="steps"><a style="width:auto" href="{{route('submission-form')}}" class="btn btn-lg btn-primary" role="button"><span style="color: #fff">Submission Form</span></a></div>
 
                 </div>
 <!--main content area -->

@@ -1,5 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Frontend\SubmissionController;
 require 'admin.php';
 
 /*
@@ -28,4 +29,8 @@ Route::get('/terms-conditions', function () {
 Route::get('/faqs', function () {
     return view('frontend.pages.faqs');
 })->name('faqs');
+
+
+Route::get('/submission-form', [SubmissionController::class, 'index'])->name('submission-form');
+Route::post('/submit-logo', [SubmissionController::class, 'store'])->name('submit-logo');
 

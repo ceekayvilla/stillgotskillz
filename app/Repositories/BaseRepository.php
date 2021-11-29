@@ -70,7 +70,7 @@ class BaseRepository implements BaseContract{
      * @return mixed      
      */
     public function findBy(array $data){
-        return $this->model->where($data)->all();
+        return $this->model->where($data)->get();
     }
     
     /**

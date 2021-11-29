@@ -41,10 +41,14 @@ class Logo extends Model
      */
     protected $fillable =[
         'participant_id',
-        'art_type',
+        'category_id',
         'path',
-        'name',
     ];
+    protected $casts = [
+        'id'=>'string',
+        'participant_id'=>'string',
+    ];
+
 
     public function participant(){
         return $this->belongsTo(Participant::class);

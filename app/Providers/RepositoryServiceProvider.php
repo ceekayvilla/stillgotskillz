@@ -1,15 +1,19 @@
 <?php
 namespace App\Providers;
-use App\Contracts\CategoryContract;
 use Illuminate\Support\ServiceProvider;
+
+use App\Contracts\CategoryContract;
 use App\Repositories\CategoryRepository;
+use App\Contracts\ParticipantContract;
+use App\Repositories\ParticipantRepository;
 
 
 class RepositoryServiceProvider extends ServiceProvider
 {
     protected $repositories = [
        // BaseContract::class => BaseRepository::class,
-        CategoryContract::class => CategoryRepository::class,
+        CategoryContract::class     => CategoryRepository::class,
+        ParticipantContract::class  => ParticipantRepository::class,
     ];
     /**
      * Register services.

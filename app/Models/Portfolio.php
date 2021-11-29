@@ -40,9 +40,12 @@ class Portfolio extends Model
      * @var array
      */
     protected $fillable =[
-        'user_id',
+        'participant_id',
         'path',
-        'name'
+    ];
+    protected $casts = [
+        'id'=>'string',
+        'participant_id'=>'string',
     ];
 
     public function participant(){

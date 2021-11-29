@@ -41,7 +41,7 @@ class Participant extends Model
      */
     protected $fillable =[
         'full_name',
-        'age',
+        'id_number',
         'email_address',
         'phone_number',
         'city',

@@ -1,0 +1,95 @@
+.error p{
+    color: red !important;
+}
+
+.success p{
+    color: green !important;
+}
+section.banner{
+    z-index:0;
+}
+.fade{
+    opacity: 1;
+}
+
+.bannertitleinner h1{
+    display: none;
+}
+.pri-col-one {width: 270px; }
+#content select.form-control {
+    padding: 0;
+    height: 52px;
+}
+
+.clearboth{
+    margin-bottom: 0px;
+}
+.clearboth p{
+font-size: 13px;
+color: #808080;
+font-style: italic;
+padding: 0px 0 15px 0;
+margin: 0px;
+/*padding: 0px 1rem;*/
+text-align: left;
+line-height: 16px;
+width: 100%;
+}
+
+.remove-member{
+    float: right;
+    margin: 20px 0 20px 0;
+}
+#content .remove-member a{
+    color:#BD2D57;
+}
+#content .team-submit{
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+    padding:15px 40px;
+    border-radius: 3px;
+    float: right;
+    margin: 60px 0 0 0;
+    font-family: PlayfairDisplay-Bold;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+#content h2.team-m{
+text-align: center;
+font-size: 20px;
+background: #edecea;
+padding: 26px 0px;
+color: #000;
+text-transform: uppercase;
+border-radius: 3px;
+clear:both;
+}
+.custom-file-upload{
+    width: 100%;
+    text-align: center
+}
+.upload-content p.user-desc{
+    text-align: center;
+    width: 100%;
+}
+input[type="file"] {
+opacity: 0;
+width: 0;
+height: 0px;
+display: inline-block !important;
+opacity: 0;
+}
+@media only screen and (max-width: 480px) {
+.mobile-invisible{
+    display: none
+    }
+    #content h2.team-m{
+        font-size: 15px;
+        padding: 15px;
+    }
+    #content .team-submit {
+        margin: 30px 0 0 0;
+        padding: 10px 0;
+    }
+}
