@@ -13,14 +13,13 @@ class CreateLogosTable extends Migration
      */
     public function up()
     {
-        Schema::create('logos', function (Blueprint $table) {
+        Schema::create('sts_logos', function (Blueprint $table) {
             $table->uuid('id')->primary()->unique();
             $table->uuid('participant_id');
             $table->uuid('category_id');
             $table->string('path');
-            $table->string('name');
             $table->timestamps();
-            $table->foreign('participant_id')->references('id')->on('participants');
+            $table->foreign('participant_id')->references('id')->on('sts_participants');
 
         });
     }
@@ -32,6 +31,6 @@ class CreateLogosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('logos');
+        Schema::dropIfExists('sts_logos');
     }
 }

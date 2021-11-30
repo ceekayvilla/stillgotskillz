@@ -2,6 +2,14 @@
      member_count = 1;
 $(document).ready(function(){
 
+    $("#dob").datepicker({
+    dateFormat: 'yy-mm-dd',
+    yearRange: '-25:-21',
+    changeMonth: true,
+    changeYear: true,
+    defaultDate: "-25Y",
+  });
+
   function logoUpload() {
   $("#logoExt").hide();
     $("#imageSizeLimit").hide();

@@ -7,7 +7,7 @@ interface ParticipantContract {
 
     public function findParticipantById(string $id);
 
-    public function createParticipant(array $params);
+    //public function createParticipant(array $params);
 
     public function findParticipant(array $data);
 

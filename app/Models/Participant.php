@@ -15,7 +15,7 @@ class Participant extends Model
      * define the $table for the model
      * @var string
      */
-    protected $table = 'participants';
+    protected $table = 'sts_participants';
 
     /**
      * Set $primaryKey column
@@ -45,7 +45,7 @@ class Participant extends Model
         'email_address',
         'phone_number',
         'city',
-        'country'
+        'dob'
     ];
 
     /**

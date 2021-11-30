@@ -13,13 +13,12 @@ class CreatePortfolioImagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('portfolio_images', function (Blueprint $table) {
+        Schema::create('sts_portfolio_images', function (Blueprint $table) {
             $table->uuid('id')->primary()->unique();
             $table->uuid('participant_id');
             $table->string('path');
-            $table->string('name');
             $table->timestamps();
-            $table->foreign('participant_id')->references('id')->on('participants');
+            $table->foreign('participant_id')->references('id')->on('sts_participants');
         });
     }
 
@@ -30,6 +29,6 @@ class CreatePortfolioImagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('portfolio_images');
+        Schema::dropIfExists('sts_portfolio_images');
     }
 }

@@ -14,7 +14,7 @@ class Category extends Model
      * define the $table for the model
      * @var string
      */
-    protected $table = 'categories';
+    protected $table = 'sts_categories';
 
     /**
      * Set $primaryKey column

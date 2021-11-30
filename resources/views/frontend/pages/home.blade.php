@@ -8,7 +8,7 @@
        <div id="logo" class="hidden-xs hidden-md hidden-sm"><img src="https://www.eabl.com/sites/all/themes/eabl/images/logo.png"></div>
       <!---<div class="bannertitleinner os-animation"data-os-animation="fadeInDown" data-os-animation-delay="0"><h1>Our Heritage</div>--->
       <div id="banner">
-        <img src="{{ asset('public/frontend/images/gotskillz-banners/still-got-skillz-banner-02.jpg') }}"/>
+        <img src="{{ asset('frontend/images/gotskillz-banners/still-got-skillz-banner-02.jpg') }}"/>
     </div>
     </section>
     <article class="article">
@@ -29,7 +29,7 @@
                   <p>Kenya Breweries Limited (KBL)  introduces an exciting challenge for painters, sculptors, wood carvers, sketch artists, fashion designers, graffiti artists and anyone with any artistic skill from Kenya to create their own artistic interpretation of the KBL logo. We are looking for someone who can interpret a logo into something that brings out the greatest things about Kenyan; Culture, Color and People for a chance to win Kshs 1 Million and mentorship with a leading Advertising Agency to bring the Logo to life.
                   </p>
                   <h4>Prizes</h4>
-                  <p>With breweries, distilleries, support industries and.</p>
+                  <!-- <p>With breweries, distilleries, support industries and.</p> -->
                     <!---figure one--->
                     <figure class="prizes">
                         <div class="pri-col-one">

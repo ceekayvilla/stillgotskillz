@@ -15,7 +15,7 @@ class Portfolio extends Model
      * define the $table for the model
      * @var string
      */
-    protected $table = 'portfolio_images';
+    protected $table = 'sts_portfolio_images';
 
     /**
      * Set $primaryKey column

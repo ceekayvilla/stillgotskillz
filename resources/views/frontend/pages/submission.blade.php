@@ -10,7 +10,7 @@
     </div>
  
     <div id="banner">
-        <img src="{{ asset('public/frontend/images/gotskillz-banners/still-got-skillz-banner-06.jpg') }}">
+        <img src="{{ asset('frontend/images/gotskillz-banners/still-got-skillz-banner-06.jpg') }}">
     </div>
     <article class="article">
         <div class="containercontent">
@@ -35,6 +35,9 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <input type="text" name="full_name" id="full_name" class="form-control @error('full_name') is-invalid @enderror" placeholder="Full Name:" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" name="dob" class="form-control @error('dob') is_invalid @enderror" id="dob" placeholder="Birthday:">
                                 </div>
                                 <div class="form-group">
                                     <input type="text" name="id_number" id="id_number" class="form-control @error('id_number') is-invalid @enderror"  placeholder="ID/Passport Number:" required>
@@ -95,6 +98,10 @@
                                     <div class="form-check">
                                         <u style="padding-right:5px;">Term and conditions</u>
                                         <input required class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                    <div class="form-check">
+                                        <u style="padding-right:5px;">I agree to give KBL consent to store my data</u>
+                                        <input required class="form-check-input position-static" type="checkbox" id="blankCheckbox2" value="option1" aria-label="...">
                                     </div>
                                 </div>
                                 <div class="form-group">

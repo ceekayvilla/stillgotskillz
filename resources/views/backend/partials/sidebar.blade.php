@@ -14,6 +14,12 @@
                     <!-- Categories Menu-->
                     @include('backend.partials.sidebar-links.categories');
 
+                    <!-- Submission by category -->
+                    @include('backend.partials.sidebar-links.submissions');
+
+                    <!-- Participants -->
+                    @include('backend.partials.sidebar-links.participants');
+
                 </ul>
             </nav>
         </div>

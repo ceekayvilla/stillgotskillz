@@ -1,5 +1,5 @@
 <li class="{{ Route::currentRouteName() == 'admin.categories.index' || Route::currentRouteName() == 'admin.categories.create' || Route::currentRouteName() == 'admin.categories.edit' || Route::currentRouteName() == 'admin.categories.trash' ? 'active' : '' }}">
-    <a href="javascript:void(0)" aria-expanded="false"><i class="ti-medall"></i><span>Products</span></a>
+    <a href="javascript:void(0)" aria-expanded="false"><i class="ti-medall"></i><span>Categories</span></a>
         <ul class="collapse">
             <li class="{{ Route::currentRouteName() == 'admin.categories.index' ? 'active' : ''}}">
                 <a href="{{ route('admin.categories.index') }}">

@@ -26,7 +26,7 @@ class CategoryController extends BaseController{
 
     public function store(Request $request){
         $this->validate($request,[
-            'name'=>'required|max:191|unique:categories',
+            'name'=>'required|max:191|unique:sts_categories',
         ]);
         $params = $request->except('_token');
         $category = $this->categoryRepository->createCategory($params);
@@ -34,6 +34,12 @@ class CategoryController extends BaseController{
             return $this->responseRedirectBack('Error occurred while creating category','error', true, true);
         }
         return $this->responseRedirect('admin.categories.index','Category added successfully','success',false, false);
+    }
+
+    public function view(string $id){
+        $category = $this->categoryRepository->findCategoryById($id);
+        $this->setPageTitle('Categories', 'View Submissions for: '.$category->name);
+        return view('backend.categories.view',compact('category'));
     }
 
     public function edit(string $id){

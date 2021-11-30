@@ -15,7 +15,7 @@ class Pid extends Model
      * define the $table for the model
      * @var string
      */
-    protected $table = 'pids';
+    protected $table = 'sts_pids';
 
     /**
      * Set $primaryKey column

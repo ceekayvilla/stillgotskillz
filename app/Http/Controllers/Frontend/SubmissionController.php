@@ -28,16 +28,19 @@ class SubmissionController extends BaseController{
         return view('frontend.pages.submission',compact('categories'));
     }
     public function store(Request $request){
+        $this->validate($request,[
+            'full_name'=>'required|max:191',
+            'dob'=>'required',
+            'email_address'=>'required|email',
+            'phone_number'=>'required',
+            'city'=>'max:191',
+        ]);
         $params = $request->except('_token');
         $participant = $this->participantRepository->createParticipant($params);
 
-       // var_dump($participant); exit;
         if(!$participant){
             return $this->responseRedirectBack('Error occured while saving the logo, try again','error', true, true);
         }
-        //var_dump(gettype($participant)); exit;
-
-        //foreach($participant as $p){
         
         $participant_id='';
         if($participant instanceof Collection){
@@ -45,11 +48,7 @@ class SubmissionController extends BaseController{
                 $participant_id = $p->id;
             }
         }else if(is_object($participant)){
-            //var_dump($participant->id); exit;
             $participant_id= $participant->id;
-            /*foreach($participant as $p){
-                $participant_id = $p->id;
-            }*/
         }
         
         if($request->has('logo')){
@@ -69,10 +68,8 @@ class SubmissionController extends BaseController{
                     'path'=>$image,
                 ]);
                 $portfolioImage->save();
-                //$participant->portfolioImages()->save($portfolioImage);
             }
         }
-        //}
         return $this->responseRedirectBack('Submission was successfull!','success', false, false);
     }
     

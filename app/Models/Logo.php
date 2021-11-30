@@ -15,7 +15,7 @@ class Logo extends Model
      * define the $table for the model
      * @var string
      */
-    protected $table = 'logos';
+    protected $table = 'sts_logos';
 
     /**
      * Set $primaryKey column
@@ -51,10 +51,10 @@ class Logo extends Model
 
 
     public function participant(){
-        return $this->belongsTo(Participant::class);
+        return $this->belongsTo(Participant::class,'participant_id');
     }
 
     public function category(){
-        return $this->belongsTo(Category::class);
+        return $this->belongsTo(Category::class,'category_id');
     }
 }

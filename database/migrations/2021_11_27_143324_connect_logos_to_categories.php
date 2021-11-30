@@ -13,8 +13,8 @@ class ConnectLogosToCategories extends Migration
      */
     public function up()
     {
-        Schema::table('logos', function (Blueprint $table) {
-            $table->foreign('category_id')->references('id')->on('categories');
+        Schema::table('sts_logos', function (Blueprint $table) {
+            $table->foreign('category_id')->references('id')->on('sts_categories');
         });
     }
 

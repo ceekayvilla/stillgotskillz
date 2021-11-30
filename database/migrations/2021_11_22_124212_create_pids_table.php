@@ -13,12 +13,12 @@ class CreatePidsTable extends Migration
      */
     public function up()
     {
-        Schema::create('pids', function (Blueprint $table) {
+        Schema::create('sts_pids', function (Blueprint $table) {
             $table->uuid('id')->primary()->unique();
             $table->uuid('participant_id');
             $table->string('path');
             $table->timestamps();
-            $table->foreign('participant_id')->references('id')->on('participants');
+            $table->foreign('participant_id')->references('id')->on('sts_participants');
         });
     }
 
@@ -29,6 +29,6 @@ class CreatePidsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pids');
+        Schema::dropIfExists('sts_pids');
     }
 }
